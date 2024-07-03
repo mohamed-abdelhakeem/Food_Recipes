@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #992;
+}
+
+.search-box {
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.search-box div {
+  position: relative;
+  overflow: hidden;
+}
+
+.search {
+  height: fit-content;
+  border: none;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.search-box i {
+  font-size: 1.5em;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+}
+
+.cards-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  row-gap: 20px;
+}
+
+.cards-box.hide {
+  display: none;
+}
+
+.cards-box .card img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body a {
+  width: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.result {
+  height: 85vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  overflow: auto;
+  z-index: 5;
+}
+
+.result.hide {
+  display: none;
+}
+
+.result .container {
+  flex-direction: column;
+  position: relative;
+}
+
+.result .container i {
+  position: absolute;
+  font-size: 3em;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.result .container p {
+  line-height: 1.6;
+  font-size: 1.2em;
+}
+
+.result .container h1 span {
+  font-size: .7em;
+}
+
+.result .container a {
+  width: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
