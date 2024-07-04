@@ -77,3 +77,5 @@ resultDiv.addEventListener("click", (e) => {
     resultDiv.classList.add("hide");
   }
 });
+
+console.log("Hi from Git")
