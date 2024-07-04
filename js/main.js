@@ -78,4 +78,4 @@ resultDiv.addEventListener("click", (e) => {
   }
 });
 
-console.log("Hi from Git")
+console.log("Second Commit To Git");
